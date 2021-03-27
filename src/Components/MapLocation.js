@@ -1,12 +1,13 @@
 import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import ContactUs from "./ContactUs";
 
 
 function MapLocation(){
     return(
     <div className="mainContainer">
                     <div className="map__text">
-                        <h1>This is Map</h1>
+                       <ContactUs/>
                     </div>
               
                         <MapContainer className="mapContainer" center={[23.4073, 85.4373]} zoom={13} scrollWheelZoom={false}>

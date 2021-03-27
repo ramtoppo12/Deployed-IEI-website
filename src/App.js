@@ -5,7 +5,7 @@ import { createUser } from './Actions/users';
 import './App.css';
 import Navbar from './Components/Navbar';
 import Sponsership from './Components/Sponsership';
-import TeamSection from './Components/TeamSection';
+import EventSection from './Components/EventSection';
 import MapLocation from "./Components/MapLocation";
 import Footer from "./Components/Footer";
 
@@ -67,7 +67,7 @@ function App() {
       </form> */}
 
       <Navbar  />
-      <TeamSection/>
+      <EventSection/>
       <Sponsership/>
       <MapLocation />
       <Footer/>

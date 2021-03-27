@@ -11,11 +11,7 @@ function Navbar() {
             <nav>
                 <ul>
                     <li>IEI</li>
-                    <li>
-                        <i className="material-icons">
-                           home
-                        </i>Home
-                    </li>
+                   
                     <li>
                         <i className="material-icons">
                             backup
@@ -26,17 +22,18 @@ function Navbar() {
                             collections
                         </i>Gallery
                     </li>
+                    
                     <li>
-                        <i className="fas fa-calendar-week"></i>  PastEvents
+                        <i className="fas fa-hard-hat display"></i> AArohan
                     </li>
                     <li>
-                        <i className="fas fa-hard-hat"></i> AArohan
+                        <i class="fas fa-business-time display"></i>Sponsership
                     </li>
                     <li>
-                        <i className="fas fa-registered"></i> Register
+                        <i className="fas fa-registered display"></i>Team
                     </li>
                     <li>
-                        <i className="material-icons">call_end</i> Contact Us
+                        <i className="material-icons">call_end</i>Contact Us
                     </li>
                 </ul>
             </nav>
