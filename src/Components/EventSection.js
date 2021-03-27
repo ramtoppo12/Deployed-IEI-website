@@ -37,7 +37,7 @@ console.log(teamdetails)
 				<div class="col-md-8 col-lg-6">
 					<div class="header-section">
 						
-						<h2 class="text-lg text-gray">OnGoing Events</h2>
+						<h2 class="text-lg text-gray text-custum text-uppercase">OnGoing Events</h2>
 					</div>
 				</div>
 			</div>
