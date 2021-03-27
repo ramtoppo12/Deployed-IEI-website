@@ -568,10 +568,9 @@ input#menu {
 
   left: 40%;
   bottom: 50%;
-  opacity: 0;
 }
-.slide:hover ~ .btn-custom {
-  z-index: 2;
+.legend {
+  opacity: 1 !important;
 }
 /* contact section */
 
