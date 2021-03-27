@@ -36,7 +36,7 @@ console.log(teamdetails)
 			<div class="row justify-content-center text-center">
 				<div class="col-md-8 col-lg-6">
 					<div class="header-section">
-						<h3 class="small-title">Aarohan 2021</h3>
+						
 						<h2 class="text-lg text-gray">OnGoing Events</h2>
 					</div>
 				</div>
