@@ -5,7 +5,7 @@ function Sponsership(){
     return (
         <>
            
-              <h1 className=" text__body">Our Sponsers for Aarohan 2021</h1>
+              <h1 className=" text__body text-uppercase text-custum">Our Sponsers for Aarohan 2021</h1>
 <div class="slider__sponser">
     <div class="slide-track">
         <div class="slide">
