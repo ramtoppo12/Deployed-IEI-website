@@ -8,6 +8,7 @@ import Sponsership from './Components/Sponsership';
 import EventSection from './Components/EventSection';
 import MapLocation from "./Components/MapLocation";
 import Footer from "./Components/Footer";
+import About from "./Components/About"
 
 function App() {
 
@@ -67,6 +68,7 @@ function App() {
       </form> */}
 
       <Navbar  />
+      <About/>
       <EventSection/>
       <Sponsership/>
       <MapLocation />
