@@ -6,7 +6,7 @@ function Navbar() {
             <header className="header"  >
             <BackgroundSlider
             images={["https://images.pexels.com/photos/176342/pexels-photo-176342.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", "https://images.pexels.com/photos/209235/pexels-photo-209235.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500","https://images.pexels.com/photos/1402923/pexels-photo-1402923.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500","https://images.pexels.com/photos/1402923/pexels-photo-1402923.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"]}
-            duration={5} transition={2} />
+            duration={1} transition={1} />
             <div className="wrapper__header">
             <input type="checkbox" id="menu" />
             <label htmlFor="menu" className="iconBar" >
