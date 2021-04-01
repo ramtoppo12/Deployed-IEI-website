@@ -3,12 +3,15 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { createUser } from './Actions/users';
 import './App.css';
-import Navbar from './Components/Navbar';
+import Header from './Components/Header';
 import Sponsership from './Components/Sponsership';
 import EventSection from './Components/EventSection';
 import MapLocation from "./Components/MapLocation";
 import Footer from "./Components/Footer";
-import About from "./Components/About"
+import About from "./Components/About";
+import { BrowserRouter as Router,Switch, Route, Link } from "react-router-dom";
+import Aarohan21 from './Components/Aarohan21';
+import Gallery from './Components/Gallery';
 
 function App() {
 
@@ -60,19 +63,30 @@ function App() {
   
   return (
     <div className="App" >
-      {/* <form onSubmit={handleSubmit}>
+      <Router>
+        <Switch>
+          <Route path="/Aarohan21">
+          <Aarohan21/>
+          </Route>
+          <Route path="/">
+           {/* <form onSubmit={handleSubmit}>
         <h1>Enter Login Details</h1>
         <input type="email" vale={userDetails.email} onChange={(e)=>setUserDetails({...userDetails,email:e.target.value})}/>
         <input type="password" value={userDetails.password} onChange={(e)=>setUserDetails({...userDetails,password:e.target.value})}/>
         <button type="submit">Submit</button>
       </form> */}
 
-      <Navbar  />
-      <About/>
-      <EventSection/>
-      <Sponsership/>
-      <MapLocation />
-      <Footer/>
+          <Header  />
+          <About/>
+          {/* <EventSection/> */}
+          <Gallery/>
+          <Sponsership/>
+          <MapLocation />
+          <Footer/>
+          </Route>
+        </Switch>
+      </Router>
+     
     </div>
   );
 }

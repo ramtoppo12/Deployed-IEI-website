@@ -1,4 +1,7 @@
 import React from "react";
+import RoomOutlinedIcon from '@material-ui/icons/RoomOutlined';
+import PhoneInTalkOutlinedIcon from '@material-ui/icons/PhoneInTalkOutlined';
+import MailOutlineSharpIcon from '@material-ui/icons/MailOutlineSharp';
 
 function ContactUs(){
     return(
@@ -6,12 +9,14 @@ function ContactUs(){
             <h1 className="text-uppercase text-custum text-gray">Contact us</h1>
             <div className="information">
                 <div className="address">
-                        <i class="fas fa-map-marker-alt icon-lg"></i>
+                        <RoomOutlinedIcon/>
                         <h3 className="text-gray text-contact">Address</h3>
-                        <p>Bit mesra main campus</p>
+                        <p>Bit mesra main campus
+                            Civil & Enviromental Engineering Department
+                        </p>
                 </div>
                 <div className="phoneNumber">
-                    <i class="fas fa-phone icon-lg"></i>
+                    <PhoneInTalkOutlinedIcon/>
                     <h3 className="text-gray text-contact">Phone Number</h3>
                     <p>+918989898989 <br/>
                         +917656898989
@@ -19,7 +24,7 @@ function ContactUs(){
 
                 </div>
                 <div className="email ">
-                    <i class="fas fa-envelope icon-lg"></i>
+                   <MailOutlineSharpIcon/>
                     <h3 className="text-gray text-contact">Email</h3>
                     <p>@mail.com</p>
 

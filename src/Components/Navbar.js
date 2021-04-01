@@ -1,59 +1,40 @@
 import React from 'react';
-import BackgroundSlider from 'react-background-slider'
+import Logo from "../assets/images/logo (1).png";
+import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
+import PhotoAlbumOutlinedIcon from '@material-ui/icons/PhotoAlbumOutlined';
+import BusinessOutlinedIcon from '@material-ui/icons/BusinessOutlined';
+import AccountBalanceOutlinedIcon from '@material-ui/icons/AccountBalanceOutlined';
+import PeopleAltOutlinedIcon from '@material-ui/icons/PeopleAltOutlined';
+import ContactPhoneOutlinedIcon from '@material-ui/icons/ContactPhoneOutlined';
+
 function Navbar() {
     return (
-        <>
-            <header className="header"  >
-            <BackgroundSlider
-            images={["https://images.pexels.com/photos/176342/pexels-photo-176342.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", "https://images.pexels.com/photos/209235/pexels-photo-209235.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500","https://images.pexels.com/photos/1402923/pexels-photo-1402923.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500","https://images.pexels.com/photos/1402923/pexels-photo-1402923.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"]}
-            duration={1} transition={1} />
-            <div className="wrapper__header">
-            <input type="checkbox" id="menu" />
-            <label htmlFor="menu" className="iconBar" >
-                <div className="menu"></div>
-            </label>
-            <nav>
+         <nav>
                 <ul>
-                    <li>IEI</li>
+                    <li className="Logo__list">
+                        <img src={Logo} alt="IEI LOGO" className="IEI__logo"/>
+                    </li>
                    
                     <li>
-                        <i className="material-icons">
-                            backup
-                        </i>About Us
+                    <InfoOutlinedIcon className="display"/> About Us
+                    </li>
+                  <li>
+                        <PhotoAlbumOutlinedIcon className="display"/> Gallery
                     </li>
                     <li>
-                        <i className="material-icons">
-                            collections
-                        </i>Gallery
-                    </li>
-                    
-                    <li>
-                        <i className="fas fa-hard-hat display"></i> AArohan
+                        <BusinessOutlinedIcon className="display"/> Aarohan
                     </li>
                     <li>
-                        <i class="fas fa-business-time display"></i>Sponsership
+                        <AccountBalanceOutlinedIcon className="display"/>Sponsership
                     </li>
                     <li>
-                        <i className="fas fa-registered display"></i>Team
+                        <PeopleAltOutlinedIcon className="display"/> Teams
                     </li>
                     <li>
-                        <i className="material-icons">call_end</i>Contact Us
+                        <ContactPhoneOutlinedIcon className="display"/> Contact Us
                     </li>
                 </ul>
             </nav>
-             </div>
-            <section className="enter text-align">
-                <h1>Institution Of Engineers (INDIA)<br/><span> BIT MESRA</span>
-                </h1>
-                <p></p><br />
-                <p> </p>
-                <div className="buttons">
-                    <button>Know Us</button>
-                    <button>Register For Events</button>
-                </div>
-            </section>
-    </header>
-        </>
     )
 }
 
