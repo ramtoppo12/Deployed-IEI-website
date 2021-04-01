@@ -11,8 +11,9 @@ import Anubhaw from "../assets/Anubhaw.JPG";
 function TeamSection(){
 
     const teamDetails = [
-        {image:Trishant,name:"Trishant Agarwal",desgination:"Joint president"},
         {image:Anubhaw,name:"Anubhaw kr. Sinha",desgination:"President"},
+
+        {image:Trishant,name:"Trishant Agarwal",desgination:"Joint president"},
         {image:Lavish,name:"Lavish Kavdla",desgination:"Media & Publicity Director"},
         {image:Ujjwal,name:"Ujjwal Prakash",desgination:"Events Director"},
         {image:Rupesh,name:"Rupesh Kumar",desgination:"Technical Director"},
