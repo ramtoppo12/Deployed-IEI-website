@@ -974,9 +974,8 @@ footer {
 }
 
 @media (max-width: 560px), (max-width: 768px), (max-width: 1200px) {
-  body {
-    max-width: 90vw;
-    text-align: center;
+  * {
+    max-width: 94vw !important;
   }
   #root {
     width: 100%;
@@ -991,7 +990,7 @@ footer {
     overflow: hidden;
   }
   .about {
-    margin: 0 -1rem 0 1rem;
+    margin: 0 0rem 0 0.5rem;
   }
   .sponserSection {
     flex-direction: column;
@@ -1043,7 +1042,7 @@ footer {
   }
   .mainContainer {
     height: 200vh;
-    margin: 0 0 0 1.1rem;
+    margin: 0 0 0 0.5rem;
   }
   .mapContainer {
     height: 50vh !important;
