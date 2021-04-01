@@ -11,8 +11,9 @@ function ContactUs(){
                 <div className="address">
                         <RoomOutlinedIcon/>
                         <h3 className="text-gray text-contact">Address</h3>
-                        <p>Bit mesra main campus
-                            Civil & Enviromental Engineering Department
+                        <p>DEPARTMENT OF CIVIL ENGINEERING
+                            BIT MESRA
+                            RANCHI - 835215
                         </p>
                 </div>
                 <div className="phoneNumber">
@@ -27,6 +28,7 @@ function ContactUs(){
                    <MailOutlineSharpIcon/>
                     <h3 className="text-gray text-contact">Email</h3>
                     <p>@mail.com</p>
+                    <span></span>
 
                 </div>
             </div>

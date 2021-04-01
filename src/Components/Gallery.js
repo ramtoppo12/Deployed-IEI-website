@@ -1,6 +1,13 @@
 import React from 'react';
-import { gsap } from "gsap";
-import $ from 'jquery';
+import img1 from "../assets/images/portfolio/01.jpg";
+import img2 from "../assets/images/portfolio/02.jpg";
+import img3 from "../assets/images/portfolio/03.jpg";
+import img4 from "../assets/images/portfolio/04.jpg";
+import img5 from "../assets/images/portfolio/05.jpg";
+import img6 from "../assets/images/portfolio/06.jpg";
+import img7 from "../assets/images/portfolio/07.jpg";
+import img8 from "../assets/images/portfolio/08.jpg";
+
 
 
 
@@ -8,6 +15,18 @@ import $ from 'jquery';
 
 
 function Gallery() {
+
+  const GalleryImage =[
+    {id:"01",image:img1,title:"title1",description:"A little bit of interesting information about this fantastic image default"},
+    {id:"02",image:img2,title:"title2",description:"A little bit of interesting information about this fantastic image default"},
+    {id:"03",image:img3,title:"title3",description:"A little bit of interesting information about this fantastic image default"},
+    {id:"04",image:img4,title:"title4",description:"A little bit of interesting information about this fantastic image default"},
+    {id:"05",image:img5,title:"title5",description:"A little bit of interesting information about this fantastic image default"},
+    {id:"06",image:img6,title:"title6",description:"A little bit of interesting information about this fantastic image default"},
+    {id:"07",image:img7,title:"title7",description:"A little bit of interesting information about this fantastic image default"},
+    {id:"08",image:img8,title:"title8",description:"A little bit of interesting information about this fantastic image default"},
+   
+  ]
 
 
     return (
@@ -18,127 +37,23 @@ function Gallery() {
     <div id="logo"></div>
   </div>
   <div id="images">
-    <div class="figure"><img class="image" src="https://picsum.photos/1920/1080/?image=75"/>
-      <div class="caption">
-        <div class="body">
-          <div class="number">01</div>
-          <hr/>
-          <h1 class="title">Image <b>Title</b></h1>
-          <p class="text">A little bit of interesting information about this fantastic image</p>
-        </div>
-      </div>
-    </div>
-    <div class="figure"><img class="image" src="https://picsum.photos/1920/1080/?image=83"/>
-      <div class="caption">
-        <div class="body">
-          <div class="number">02</div>
-          <hr/>
-          <h1 class="title">Image <b>Title</b></h1>
-          <p class="text">A little bit of interesting information about this fantastic image</p>
-        </div>
-      </div>
-    </div>
-    <div class="figure"><img class="image" src="https://picsum.photos/1920/1080/?image=89"/>
-      <div class="caption">
-        <div class="body">
-          <div class="number">03</div>
-          <hr/>
-          <h1 class="title">Image <b>Title</b></h1>
-          <p class="text">A little bit of interesting information about this fantastic image</p>
-        </div>
-      </div>
-    </div>
-    <div class="figure"><img class="image" src="https://picsum.photos/1920/1080/?image=44"/>
-      <div class="caption">
-        <div class="body">
-          <div class="number">04</div>
-          <hr/>
-          <h1 class="title">Image <b>Title</b></h1>
-          <p class="text">A little bit of interesting information about this fantastic image</p>
-        </div>
-      </div>
-    </div>
-    <div class="figure"><img class="image" src="https://picsum.photos/1920/1080/?image=38"/>
-      <div class="caption">
-        <div class="body">
-          <div class="number">05</div>
-          <hr/>
-          <h1 class="title">Image <b>Title</b></h1>
-          <p class="text">A little bit of interesting information about this fantastic image</p>
-        </div>
-      </div>
-    </div>
-    <div class="figure"><img class="image" src="https://picsum.photos/1920/1080/?image=94"/>
-      <div class="caption">
-        <div class="body">
-          <div class="number">06</div>
-          <hr/>
-          <h1 class="title">Image <b>Title</b></h1>
-          <p class="text">A little bit of interesting information about this fantastic image</p>
-        </div>
-      </div>
-    </div>
-    <div class="figure"><img class="image" src="https://picsum.photos/1920/1080/?image=53"/>
-      <div class="caption">
-        <div class="body">
-          <div class="number">07</div>
-          <hr/>
-          <h1 class="title">Image <b>Title</b></h1>
-          <p class="text">A little bit of interesting information about this fantastic image</p>
-        </div>
-      </div>
-    </div>
-    <div class="figure"><img class="image" src="https://picsum.photos/1920/1080/?image=58"/>
-      <div class="caption">
-        <div class="body">
-          <div class="number">08</div>
-          <hr/>
-          <h1 class="title">Image <b>Title</b></h1>
-          <p class="text">A little bit of interesting information about this fantastic image</p>
-        </div>
-      </div>
-    </div>
-    <div class="figure"><img class="image" src="https://picsum.photos/1920/1080/?image=55"/>
-      <div class="caption">
-        <div class="body">
-          <div class="number">09</div>
-          <hr/>
-          <h1 class="title">Image <b>Title</b></h1>
-          <p class="text">A little bit of interesting information about this fantastic image</p>
-        </div>
-      </div>
-    </div>
-    <div class="figure"><img class="image" src="https://picsum.photos/1920/1080/?image=62"/>
-      <div class="caption">
-        <div class="body">
-          <div class="number">10</div>
-          <hr/>
-          <h1 class="title">Image <b>Title</b></h1>
-          <p class="text">A little bit of interesting information about this fantastic image</p>
-        </div>
-      </div>
-    </div>
-    <div class="figure"><img class="image" src="https://picsum.photos/1920/1080/?image=10"/>
-      <div class="caption">
-        <div class="body">
-          <div class="number">11</div>
-          <hr/>
-          <h1 class="title">Image <b>Title</b></h1>
-          <p class="text">A little bit of interesting information about this fantastic image</p>
-        </div>
-      </div>
-    </div>
-    <div class="figure"><img class="image" src="https://picsum.photos/1920/1080/?image=66"/>
-      <div class="caption">
-        <div class="body">
-          <div class="number">12</div>
-          <hr/>
-          <h1 class="title">Image <b>Title</b></h1>
-          <p class="text">A little bit of interesting information about this fantastic image</p>
-        </div>
-      </div>
-    </div>
 
+    {
+      GalleryImage.map(GalleryData=>(
+        <div class="figure"><img class="image" src={GalleryData.image}/>
+      <div class="caption">
+        <div class="body">
+          <div class="number">{GalleryData.id}</div>
+          <hr/>
+          <h1 class="title"> <b class="text-uppercase">{GalleryData.title}</b></h1>
+          <p class="text">{GalleryData.description}</p>
+        </div>
+      </div>
+    </div>
+      ))
+    }
+    
+    
 
     
   </div>

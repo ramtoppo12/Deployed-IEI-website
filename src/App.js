@@ -12,6 +12,7 @@ import About from "./Components/About";
 import { BrowserRouter as Router,Switch, Route, Link } from "react-router-dom";
 import Aarohan21 from './Components/Aarohan21';
 import Gallery from './Components/Gallery';
+import TeamSection from './Components/TeamSection';
 
 function App() {
 
@@ -80,6 +81,7 @@ function App() {
           <About/>
           {/* <EventSection/> */}
           <Gallery/>
+          <TeamSection/>
           <Sponsership/>
           <MapLocation />
           <Footer/>
