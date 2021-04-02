@@ -942,6 +942,13 @@ footer {
   .display {
     display: none !important;
   }
+  .sponserSection {
+    margin-top: 2rem;
+  }
+  .sponserSection h1 {
+    height: 100% !important;
+    padding-top: 1.5rem;
+  }
   nav ul li {
     margin-top: 1rem;
     color: #e63636fa;
