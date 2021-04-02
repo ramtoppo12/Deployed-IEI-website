@@ -27,7 +27,7 @@ function ContactUs(){
                 <div className="email ">
                    <MailOutlineSharpIcon/>
                     <h3 className="text-gray text-contact">Email</h3>
-                    <p>@mail.com</p>
+                    <p>bitmesraieicivil@gmail.com</p>
                     <span></span>
 
                 </div>

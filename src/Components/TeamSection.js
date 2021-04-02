@@ -1,5 +1,5 @@
 import React from "react";
-import Trishant from "../assets/trishant.jpeg";
+import Trishant from "../assets/trishantnewedit.jpeg";
 import Lavish from "../assets/Lavish.jpeg"
 import Ujjwal from "../assets/Ujjwal.jpg";
 import Shrique from "../assets/sharik.jpg";

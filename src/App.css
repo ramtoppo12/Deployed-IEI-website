@@ -99,7 +99,7 @@ body {
 
 /* end */
 .App {
-  width: 100vh;
+  width: 100%;
 }
 .header {
   display: flex;
@@ -220,7 +220,6 @@ body {
 .stage {
   width: 100%;
   height: 100%;
-  margin: 0 0 0 1rem;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -981,13 +980,15 @@ footer {
     width: 100%;
   }
   /*  */
-  .about {
-    margin: 0 0rem 0 0.5rem;
+  .mapContainer {
+    height: 30vh !important;
+    width: 35%;
+    margin: auto;
   }
+
   .sponserSection {
     flex-direction: column;
     height: 35vh;
-    margin: 0 0 0 1rem;
   }
   .sponserSection h1 {
     margin-top: 1rem;
@@ -1018,12 +1019,6 @@ footer {
     overflow: hidden;
   }
 
-  .team {
-    margin: 0 -1rem 0 1rem;
-  }
-  .header {
-    max-width: 100% !important;
-  }
   .header .enter h1 {
     font-size: 35px;
     top: 47%;
@@ -1034,7 +1029,6 @@ footer {
   }
   .mainContainer {
     height: 200vh;
-    margin: 0 0 0 0.5rem;
   }
   .mapContainer {
     height: 50vh !important;
