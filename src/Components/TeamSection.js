@@ -25,7 +25,7 @@ function TeamSection(){
     return (
               <>
               
-<div class="team">
+<div class="team" id="team">
   <h2>Meet The Team</h2>
   <div class="list">
 

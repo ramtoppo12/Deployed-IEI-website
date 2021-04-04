@@ -5,7 +5,7 @@ import MailOutlineSharpIcon from '@material-ui/icons/MailOutlineSharp';
 
 function ContactUs(){
     return(
-        <div className="contactus">
+        <div id="contact" className="contactus" >
             <h1 className="text-uppercase text-custum text-gray">Contact us</h1>
             <div className="information">
                 <div className="address">

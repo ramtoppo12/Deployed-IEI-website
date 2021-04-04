@@ -3,7 +3,7 @@ import React from "react";
 
 function Sponsership(){
     return (
-        <div className="sponserSection">
+        <div className="sponserSection" id="sponserhip">
            
               <h1 className=" text__body text-uppercase text-custum">Our Sponsers for Aarohan 2021</h1>
 <div class="slider__sponser">

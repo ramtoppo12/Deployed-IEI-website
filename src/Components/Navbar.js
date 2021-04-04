@@ -6,6 +6,8 @@ import BusinessOutlinedIcon from '@material-ui/icons/BusinessOutlined';
 import AccountBalanceOutlinedIcon from '@material-ui/icons/AccountBalanceOutlined';
 import PeopleAltOutlinedIcon from '@material-ui/icons/PeopleAltOutlined';
 import ContactPhoneOutlinedIcon from '@material-ui/icons/ContactPhoneOutlined';
+import {Link} from 'react-scroll';
+import {Link as A} from "react-router-dom";
 
 function Navbar() {
     return (
@@ -16,22 +18,34 @@ function Navbar() {
                     </li>
                    
                     <li>
+                    <Link activeClass="active" spy={true} smooth={true} to="about">
                     <InfoOutlinedIcon className="display"/> About Us
+                  </Link>
                     </li>
                   <li>
+                      <Link activeClass="active" to="images" spy={true} smooth={true}>
                         <PhotoAlbumOutlinedIcon className="display"/> Gallery
+                        </Link>
                     </li>
                     <li>
-                        <BusinessOutlinedIcon className="display"/> Aarohan
+                        <A to="/Aarohan21" >
+                        <BusinessOutlinedIcon className="display"/> Aarohan21
+                        </A>
                     </li>
                     <li>
+                        <Link activeClass="active" to="sponserhip" spy={true} smooth={true}>
                         <AccountBalanceOutlinedIcon className="display"/>Sponsership
+                        </Link>
                     </li>
                     <li>
+                        <Link activeClass="active" to="team" spy={true} smooth={true}>
                         <PeopleAltOutlinedIcon className="display"/> Teams
+                        </Link>
                     </li>
                     <li>
+                        <Link to="contact" spy={true} smooth={true}>
                         <ContactPhoneOutlinedIcon className="display"/> Contact Us
+                        </Link>
                     </li>
                 </ul>
             </nav>

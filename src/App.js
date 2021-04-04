@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React,{useEffect,useState} from 'react';
 import { useDispatch } from 'react-redux';
 import { createUser } from './Actions/users';
 import './App.css';
@@ -13,60 +13,42 @@ import { BrowserRouter as Router,Switch, Route, Link } from "react-router-dom";
 import Aarohan21 from './Components/Aarohan21';
 import Gallery from './Components/Gallery';
 import TeamSection from './Components/TeamSection';
+import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
+import Navbar from './Components/Navbar';
 
 function App() {
 
-  // const [userDetails,setUserDetails] = React.useState({
-  //   email:"",
-  //   password:""
-  // });
+  const [isVisible, setIsVisible] = useState(false);
 
-  // const dispatch = useDispatch();
-  // const handleSubmit =(evt)=>{
-  //   evt.preventDefault();
+  // Show button when page is scorlled upto given distance
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
 
-  //   dispatch(createUser(userDetails))
-    
-  // }
+  // Set the top cordinate to 0
+  // make scrolling smooth
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
 
-// const backgroundChanger = () =>{
-//    var images = [], x = -1;
-//       images[0] ='./assets/one.jpeg';
-//       images[1] ='./assets/two.jpeg';
-//       images[2] ='./assets/three.jpeg';
-//       images[3] ='./assets/four.jpeg';
-//       images[4] ='./assets/five.jpeg';
-//       images[5] ='./assets/six.jpeg';
-
-//       var img = document.getElementById("img");
-
-// function displayImage(x) {
-//   img.style.backgroundImage = "url(" + images[x] + ")";
-// }
-// function startTimer() {
-//   var x = 0;
-//   displayImage(x);
-//   setInterval(function() {
-//     x = x + 1 >= images.length ? 0 : x + 1;
-//     displayImage(x);
-//   }, 5000);
-// }
-// startTimer();
-
-// }
-
-// loader
-
-// $(window).load(function () {
-//         // Animate loader off screen
-//         $(".mesh-loader").fadeOut("slow");;
-//     });
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisibility);
+  }, []);
   
   return (
     <div className="App" >
       <Router>
         <Switch>
-          <Route path="/Aarohan21">
+          <Route path="/aarohan21" exact>
+           
+
           <Aarohan21/>
           </Route>
           <Route path="/">
@@ -78,13 +60,20 @@ function App() {
       </form> */}
 
           <Header  />
-          <About/>
+          <About />
           {/* <EventSection/> */}
-          <Gallery/>
-          <TeamSection/>
-          <Sponsership/>
+          <Gallery />
+          <TeamSection />
+          <Sponsership />
           <MapLocation />
           <Footer/>
+          {isVisible && 
+        
+        <button onClick={scrollToTop}  class="top-button" id="js-top">
+            <ArrowUpwardIcon  className="top__Icon" />
+          </button>
+          }
+          
           </Route>
         </Switch>
       </Router>
