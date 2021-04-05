@@ -25,10 +25,7 @@ function Header() {
                 </h1>
                 <p></p><br />
                 <p> </p>
-                <div className="buttons">
-                    <button>Know Us</button>
-                    <button>Register For Events</button>
-                </div>
+               
             </section>
     </header>
         </>

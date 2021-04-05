@@ -33,13 +33,13 @@ function Navbar() {
                         </A>
                     </li>
                     <li>
-                        <Link activeClass="active" to="sponserhip" spy={true} smooth={true}>
-                        <AccountBalanceOutlinedIcon className="display"/>Sponsership
+                        <Link activeClass="active"  to="team" spy={true} smooth={true}>
+                      <PeopleAltOutlinedIcon className="display"/>  Teams
                         </Link>
                     </li>
                     <li>
-                        <Link activeClass="active" to="team" spy={true} smooth={true}>
-                        <PeopleAltOutlinedIcon className="display"/> Teams
+                        <Link activeClass="active" to="sponserhip" spy={true} smooth={true}>
+                        <AccountBalanceOutlinedIcon className="display"/>Our Events 2021
                         </Link>
                     </li>
                     <li>

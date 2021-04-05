@@ -5,6 +5,10 @@ import Ujjwal from "../assets/Ujjwal.jpg";
 import Shrique from "../assets/sharik.jpg";
 import Rupesh from "../assets/rupesh.jpeg";
 import Anubhaw from "../assets/Anubhaw.JPG";
+import facebook from "../assets/Social media icons/icons8-facebook-100.png";
+import instagram from "../assets/Social media icons/icons8-instagram-100.png";
+import linkedin from "../assets/Social media icons/icons8-linkedin-100.png";
+
 
 
 
@@ -41,8 +45,14 @@ function TeamSection(){
    
     
     <div class="member join">
-      <p>We attach</p>
-      <p>We protech</p><small>but most importantly...</small><strong>We want our bone beck!</strong><a href="https://www.instagram.com/iei_civil_bitmesra/">Join Us</a>
+      <p>IEI Student Chapter</p>
+      <p>Birla Institute of Technology</p><small>Mesra</small>
+      <div className="social-media">
+        <a href="https://www.instagram.com/iei_civil_bitmesra/"><img src={facebook}/></a>
+        <a href="https://www.instagram.com/iei_civil_bitmesra/"><img src={instagram}/></a>
+        <a href="https://www.instagram.com/iei_civil_bitmesra/"><img src={linkedin}/></a>
+
+      </div>
     </div>
   </div>
 </div>

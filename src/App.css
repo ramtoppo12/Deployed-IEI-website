@@ -26,6 +26,16 @@ body {
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+a:active,
+a:focus,
+a:hover {
+  text-decoration: none !important;
+  color: var(--white-color);
+}
 .no-js #loader {
   display: none;
 }
@@ -621,6 +631,26 @@ input#menu {
   }
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form input,
+textarea {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+.form button {
+  background-color: #e63636fa;
+  width: 150px;
+  color: var(--white-color);
+  margin: 1rem 0 0 0;
+  outline: none;
+  border: none;
+}
 /* team section ends */
 .card {
   position: relative;
@@ -882,12 +912,18 @@ footer {
   text-align: center;
   padding-top: 1rem;
   height: 8vh;
-  font-weight: 900;
+  font-weight: 300;
   letter-spacing: 2px;
   margin-top: 12px;
   background-color: var(--background-color);
   margin: 0;
   color: var(--white-color) !important;
+}
+.social-media a img {
+  width: 5rem;
+}
+.social-media a {
+  background: transparent !important;
 }
 .top-button {
   /* display: none; */
@@ -1028,7 +1064,6 @@ footer {
   }
   /*  */
   .mapContainer {
-    height: 30vh !important;
     width: 35%;
     margin: auto;
   }
@@ -1079,7 +1114,7 @@ footer {
     height: 100vh;
   }
   .mainContainer {
-    height: 200vh;
+    height: 130vh;
   }
   .mapContainer {
     height: 50vh !important;
@@ -1258,5 +1293,8 @@ footer {
   }
   .top__Icon {
     margin-right: 12px 10px 7px 10px;
+  }
+  .member.join {
+    height: 312px !important;
   }
 }
